@@ -1,7 +1,7 @@
 header{
     background-color: whitesmoke;
 }
-#container-computer{
+#computer-nav{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -10,69 +10,34 @@ header{
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #hamburgermenu{
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    text-align: center;
+    display: none;
+    text-align: right;
 }
-#navbaritem1{
-    grid-row: 1;
-}
-#navbaritem2{
-    grid-row: 2;
-}
-#navbaritem3{
-    grid-row: 3;
-}
-#navbaritem4{
-    grid-row: 4;
-}
-#navbaritem1:link, #navbaritem1:visited{
+.navbaritem:link, .navbaritem:visited{
     background-color: black;
     color: white;
     border-radius: 8%;
     padding: 10px 20px;
     text-decoration: none;
 }
-#navbaritem2:link, #navbaritem2:visited{
-    background-color: black;
-    color: white;
-    border-radius: 8%;
-    padding: 10px 20px;
-    text-decoration: none;
+.navbaritem:hover, .navbaritem:active{
+    background-color: rgb(255, 255, 0);
+    color: black;
 }
-#navbaritem3:link, #navbaritem3:visited{
-    background-color: black;
-    color: white;
-    border-radius: 8%;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-#navbaritem4:link, #navbaritem4:visited{
-    background-color: black;
-    color: white;
-    border-radius: 8%;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-#navbaritem1:hover, #navbaritem1:active{
-    background-color: rgb(110, 110, 110);
-}
-#navbaritem2:hover, #navbaritem2:active{
-    background-color: rgb(110, 110, 110);
-}
-#navbaritem3:hover, #navbaritem3:active{
-    background-color: rgb(110, 110, 110);
-}
-#navbaritem4:hover, #navbaritem4:active{
-    background-color: rgb(110, 110, 110);
+#icon {
+    background-image: url(../img/icon.png);
+    text-align: right;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 @media only screen and (max-width: 400px){
-    #container-computer{
+    #computer-nav{
         display: none;
     }
-}
-@media only screen and (min-width: 400px){
-    #hamburgermenu{
-        display: none;
+    #icon{
+        background: white;
+        display: block;
     }
 }
