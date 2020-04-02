@@ -1,6 +1,3 @@
-header{
-    background-color: whitesmoke;
-}
 #computer-nav{
     display: flex;
     flex-wrap: nowrap;
@@ -8,10 +5,12 @@ header{
     padding: 1vmin 0% 1vmin 0%;
     text-align: center;
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: whitesmoke;
 }
 #hamburgermenu{
     display: none;
     text-align: right;
+    margin-top: 9vmin;
 }
 .navbaritem:link, .navbaritem:visited{
     background-color: black;
@@ -39,5 +38,10 @@ header{
     #icon{
         background: white;
         display: block;
+    }
+}
+@media only screen and (min-width: 400px){
+    #hamburgermenu{
+        display: none;
     }
 }
