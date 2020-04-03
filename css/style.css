@@ -1,3 +1,6 @@
+body{
+    background-color: whitesmoke;
+}
 #computer-nav{
     display: flex;
     flex-wrap: nowrap;
@@ -5,11 +8,14 @@
     padding: 1vmin 0% 1vmin 0%;
     text-align: center;
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: whitesmoke;
+    background-color: black;
 }
 #hamburgermenu{
     display: none;
-    text-align: right;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    right: 1%;
     margin-top: 9vmin;
 }
 .navbaritem:link, .navbaritem:visited{
@@ -23,6 +29,16 @@
     background-color: rgb(255, 255, 0);
     color: black;
 }
+.images{
+    margin: 0px 0px 0px 0px;
+    padding: 5%;
+    background-color: crimson;
+    outline-style: solid;
+    color: chartreuse;
+}
+.placerholdertext{
+    font-size: x-large;
+}
 #icon {
     background-image: url(../img/icon.png);
     text-align: right;
@@ -30,6 +46,27 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+#computer-article{
+    display: flex;
+}
+#p1{
+    background-color: burlywood;
+    padding: 2%;
+}
+#p2{
+    background-color: brown;
+    color: white;
+    padding: 2%;
+}
+#p3{
+    background-color: burlywood;
+    padding: 2%;
+}
+#p4{
+    background-color: brown;
+    color: white;
+    padding: 2%;
 }
 @media only screen and (max-width: 400px){
     #computer-nav{
@@ -39,9 +76,34 @@
         background: white;
         display: block;
     }
+    #firstrowarticle{
+        display: inline-block;
+        margin: 3vmin 0% 0% 0%;
+    }
+    #computer-article{
+        display: none;
+    }
 }
 @media only screen and (min-width: 400px){
     #hamburgermenu{
         display: none;
+    }
+    #mobile-article{
+        display: none;
+    }
+}
+@media only screen and (max-width: 316px){
+    #firstrowarticle{
+        margin: 5vmin 0% 0% 0%;
+    }
+}
+@media only screen and (max-width: 192px){
+    #firstrowarticle{
+        margin: 6vmin 0% 0% 0%;
+    }
+}
+@media only screen and (max-width: 159px){
+    #firstrowarticle{
+        margin: 7vmin 0% 0% 0%;
     }
 }
