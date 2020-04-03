@@ -39,6 +39,13 @@ body{
 .placerholdertext{
     font-size: x-large;
 }
+.bun{
+    background-color: peru;
+}
+.meat{
+    background-color: brown;
+    color: whitesmoke;
+}   
 #icon {
     background-image: url(../img/icon.png);
     text-align: right;
@@ -67,6 +74,17 @@ body{
     background-color: brown;
     color: white;
     padding: 2%;
+}
+#foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: x-large;
+}
+#burgers{
+    margin: 1%  ;
+}
+#cheese{
+    background-color: yellow;
 }
 @media only screen and (max-width: 400px){
     #computer-nav{
@@ -105,5 +123,15 @@ body{
 @media only screen and (max-width: 159px){
     #firstrowarticle{
         margin: 7vmin 0% 0% 0%;
+    }
+}
+@media only screen and (max-width: 880px){
+    #foot{
+        display: block;
+    }
+}
+@media only screen and (max-width: 440px){
+    #foot{
+        font-size: medium;
     }
 }
