@@ -10,14 +10,6 @@ body{
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: black;
 }
-#hamburgermenu{
-    display: none;
-    position: absolute;
-    text-align: center;
-    top: 0%;
-    right: 1%;
-    margin-top: 9vmin;
-}
 .navbaritem:link, .navbaritem:visited{
     background-color: black;
     color: white;
@@ -45,7 +37,15 @@ body{
 .meat{
     background-color: brown;
     color: whitesmoke;
-}   
+}
+#hamburgermenu{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    right: 1%;
+    margin-top: 9vmin;
+}
 #icon {
     background-image: url(../img/icon.png);
     text-align: right;
